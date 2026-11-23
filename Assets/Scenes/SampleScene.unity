@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -257,15 +256,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!45 &330585548
-Skybox:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 7b0f2096b49ccfb4f8b47c8084d650fa, type: 2}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,12 +462,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeatherManager
   sun: {fileID: 410087040}
-  skyboxComponent: {fileID: 330585548}
   skyboxDay: {fileID: 2100000, guid: 9ca22510633fbfd4399f1704cd9d5c72, type: 2}
   skyboxRain: {fileID: 2100000, guid: b5a27fa4b11bfb24cbc6daff3802c229, type: 2}
   skyboxClear: {fileID: 2100000, guid: 0d5771081eb9abb43b1792b52260d914, type: 2}
   skyboxSnowy: {fileID: 2100000, guid: 7b0f2096b49ccfb4f8b47c8084d650fa, type: 2}
-  city: Plymouth
+  skyboxNight: {fileID: 2100000, guid: 8202c457dff32486ba5ae1f2f548d983, type: 2}
+  selectedCity: 0
+  dayIntensity: 1.2
+  nightIntensity: 0.1
+  dayColor: {r: 1, g: 1, b: 1, a: 1}
+  nightColor: {r: 0.3, g: 0.35, b: 0.6, a: 1}
 --- !u!4 &1755502675
 Transform:
   m_ObjectHideFlags: 0
